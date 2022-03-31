@@ -1,0 +1,141 @@
+<%- include("../partials/head") %>
+<body>
+    <div id="page-container">
+    <%- include("../partials/navbar") %>
+    <div class="center">
+        <h1>Star wars starships</h1>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>Starship class</th>
+                    <th>Length (m)</th>
+                    <th>Crew</th>
+                    <th>Manufacturer</th>
+                    <th>MAX: Max atmosphering speed (km)</th>
+                    <th>MGLT: Max number of Megalights in an hour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i=0; i < starships.results.length ; i++ ){ %>
+                    <tr>
+                        <td>
+                            <%=starships.results[i].name%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].model%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].starship_class%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].length%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].crew%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].manufacturer%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].max_atmosphering_speed%>
+                        </td>
+                        <td>
+                            <%=starships.results[i].MGLT%>
+                        </td>
+                    </tr>
+                    <% }; %>
+                <% for(var i=0; i < starships2.results.length ; i++ ){ %>
+                    <tr>
+                        <td>
+                            <%=starships2.results[i].name%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].model%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].starship_class%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].length%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].crew%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].manufacturer%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].max_atmosphering_speed%>
+                        </td>
+                        <td>
+                            <%=starships2.results[i].MGLT%>
+                        </td>
+                    </tr>
+                    <% }; %>  
+                <% for(var i=0; i < starships3.results.length ; i++ ){ %>
+                    <tr>
+                        <td>
+                            <%=starships3.results[i].name%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].model%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].starship_class%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].length%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].crew%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].manufacturer%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].max_atmosphering_speed%>
+                        </td>
+                        <td>
+                            <%=starships3.results[i].MGLT%>
+                        </td>
+                    </tr>
+                    <% }; %>  
+                <% for(var i=0; i < starships4.results.length ; i++ ){ %>
+                    <tr>
+                            <td>
+                                <%=starships4.results[i].name%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].model%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].starship_class%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].length%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].crew%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].manufacturer%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].max_atmosphering_speed%>
+                            </td>
+                            <td>
+                                <%=starships4.results[i].MGLT%>
+                            </td>
+
+                    </tr>
+                    <% }; %>                
+            </tbody>
+        </table>
+
+    </div>
+<%- include("../partials/footer") %>
+</div>
+</body>
+</html>

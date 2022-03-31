@@ -1,0 +1,161 @@
+<%- include("../partials/head") %>
+<body>
+    <div id="page-container">
+    <%- include("../partials/navbar") %>
+    <div class="center">
+        <h1>Star wars species</h1>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Classification</th>
+                    <th>Designation </th>
+                    <th>Average height (cm)</th>
+                    <th>Average lifespan (years)</th>
+                    <th>Eye colors</th>
+                    <th>Hair colors</th>
+                    <th>Skin colors</th>
+                    <th>Language</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <% for(var i=0; i < species.results.length ; i++ ){ %>
+                    <tr>
+                        <td>
+                            <%=species.results[i].name%>
+                        </td>
+                        <td>
+                            <%=species.results[i].classification%>
+                        </td>
+                        <td>
+                            <%=species.results[i].designation%>
+                        </td>
+                        <td>
+                            <%=species.results[i].average_height%>
+                        </td>
+                        <td>
+                            <%=species.results[i].average_lifespan%>
+                        </td>
+                        <td>
+                            <%=species.results[i].eye_colors%>
+                        </td>
+                        <td>
+                            <%=species.results[i].hair_colors%>
+                        </td>
+                        <td>
+                            <%=species.results[i].skin_colors%>
+                        </td>
+                        <td>
+                            <%=species.results[i].language%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+                <% for(var i=0; i < species2.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=species2.results[i].name%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].classification%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].designation%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].average_height%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].average_lifespan%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].eye_colors%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].hair_colors%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].skin_colors%>
+                        </td>
+                        <td>
+                            <%=species2.results[i].language%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+                <% for(var i=0; i < species3.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=species3.results[i].name%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].classification%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].designation%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].average_height%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].average_lifespan%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].eye_colors%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].hair_colors%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].skin_colors%>
+                        </td>
+                        <td>
+                            <%=species3.results[i].language%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+                <% for(var i=0; i < species4.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=species4.results[i].name%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].classification%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].designation%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].average_height%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].average_lifespan%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].eye_colors%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].hair_colors%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].skin_colors%>
+                        </td>
+                        <td>
+                            <%=species4.results[i].language%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+            </tbody>
+        </table>
+
+    </div>
+<%- include("../partials/footer") %>
+</div>
+</body>
+</html>

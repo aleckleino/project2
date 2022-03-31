@@ -1,0 +1,146 @@
+<%- include("../partials/head") %>
+<body>
+    <div id="page-container">
+    <%- include("../partials/navbar") %>
+    <div class="center">
+        <h1>Star wars vehicles</h1>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>Vehicle class</th>
+                    <th>Length (m)</th>
+                    <th>Crew</th>
+                    <th>Passengers</th>
+                    <th>Manufacturer</th>
+                    <th>MAX: Max atmosphering speed (km)</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <% for(var i=0; i < vehicles.results.length ; i++ ){ %>
+                    <tr>
+                        <tr>
+                            <td>
+                                <%=vehicles.results[i].name%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].model%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].vehicle_class%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].length%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].crew%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].passengers%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].manufacturer%>
+                            </td>
+                            <td>
+                                <%=vehicles.results[i].max_atmosphering_speed%>
+                            </td>
+                    </tr>
+                    <% }; %>
+                <% for(var i=0; i < vehicles2.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=vehicles2.results[i].name%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].model%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].vehicle_class%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].length%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].crew%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].passengers%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].manufacturer%>
+                        </td>
+                        <td>
+                            <%=vehicles2.results[i].max_atmosphering_speed%>
+                        </td>
+                    </tr>
+                    <% }; %>  
+                <% for(var i=0; i < vehicles3.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=vehicles3.results[i].name%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].model%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].vehicle_class%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].length%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].crew%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].passengers%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].manufacturer%>
+                        </td>
+                        <td>
+                            <%=vehicles3.results[i].max_atmosphering_speed%>
+                        </td>
+                    </tr>
+                    <% }; %>  
+                <% for(var i=0; i < vehicles4.results.length ; i++ ){ %>
+
+                    <tr>
+                            <td>
+                                <%=vehicles4.results[i].name%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].model%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].vehicle_class%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].length%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].crew%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].passengers%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].manufacturer%>
+                            </td>
+                            <td>
+                                <%=vehicles4.results[i].max_atmosphering_speed%>
+                            </td>
+                    </tr>
+                    <% }; %>    
+            </tbody>
+        </table>
+
+    </div>
+<%- include("../partials/footer") %>
+</div>
+</body>
+</html>
+

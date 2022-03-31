@@ -1,0 +1,144 @@
+<%- include("../partials/head") %>
+
+    <body>
+        <div id="page-container">
+            <%- include("../partials/navbar") %>
+                <div class="center">
+                    <h1>Star wars characters</h1>
+                    <table class="pure-table pure-table-horizontal">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Birth year</th>
+                                <th>Gender</th>
+                                <th>Height (cm)</th>
+                                <th>Mass (kg)</th>
+                                <th>Skin color</th>
+                                <th>Hair color</th>
+                                <th>Eye color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(var i=0; i < characters.results.length ; i++ ){ %>
+                                <tr>
+                                    <td>
+                                        <%=characters.results[i].name%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].birth_year%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].gender%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].height%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].mass%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].skin_color%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].hair_color%>
+                                    </td>
+                                    <td>
+                                        <%=characters.results[i].eye_color%>
+                                    </td>
+                                </tr>
+                                <% }; %>
+                            <% for(var i=0; i < characters2.results.length ; i++ ){ %>
+                                <tr>
+                                    <td>
+                                        <%=characters2.results[i].name%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].birth_year%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].gender%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].height%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].mass%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].skin_color%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].hair_color%>
+                                    </td>
+                                    <td>
+                                        <%=characters2.results[i].eye_color%>
+                                    </td>
+                                </tr>
+                                <% }; %>
+                            <% for(var i=0; i < characters3.results.length ; i++ ){ %>
+                                <tr>
+                                    <td>
+                                        <%=characters3.results[i].name%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].birth_year%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].gender%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].height%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].mass%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].skin_color%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].hair_color%>
+                                    </td>
+                                    <td>
+                                        <%=characters3.results[i].eye_color%>
+                                    </td>
+                                </tr>
+                                </tr>
+                                <% }; %>
+                                <% for(var i=0; i < characters4.results.length ; i++ ){ %>
+                                    <tr>
+                                        <td>
+                                            <%=characters4.results[i].name%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].birth_year%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].gender%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].height%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].mass%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].skin_color%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].hair_color%>
+                                        </td>
+                                        <td>
+                                            <%=characters4.results[i].eye_color%>
+                                        </td>
+                                    </tr>
+                                    </tr>
+                                    <% }; %>
+                        </tbody>
+                    </table>
+
+                </div>
+                <%- include("../partials/footer") %>
+        </div>
+    </body>
+
+    </html>

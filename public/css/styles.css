@@ -1,0 +1,414 @@
+body {
+  color: rgb(156, 156, 156);
+  background-image: url('../img/background.jpg') !important;
+  background: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(0, 0, 0);
+}
+
+.l-box {
+  padding: 2em;
+}
+
+.header .pure-menu {
+  border-bottom-color: black;
+  border-radius: 0;
+  background-color: #000000;
+  text-align: center;
+}
+
+.pure-menu-link {
+  padding: 1em 0.7em;
+  background-color: #000000;
+}
+
+.pure-menu-list li a {
+  padding: 1em 0.7em;
+  background-color: #000000;
+  color: rgb(185, 185, 185) !important;
+  display: inline-block;
+  list-style-type: none;
+}
+.pure-menu-list {
+  display: inline-block !important;
+} 
+
+.custom-menu-top {
+  background: transparent !important;
+}
+
+.pure-g {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 4em;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  background: rgb(0, 0, 0);
+  border: solid 10px #000; 
+  background-color: rgba(14, 14, 14, 0.8); 
+  border-color: rgba(0,0,0,0.2); 
+  
+}
+.photo-box,
+.text-box {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  text-align: center;
+}
+
+.photo-box-thin {
+  height: 120px;
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  top:-20px !important;
+}
+
+.photo-box aside {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em 0.5em;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 80%;
+  text-align: right;
+  background: -moz-linear-gradient(
+    top,
+    rgba(16, 27, 30, 0) 0%,
+    rgba(12, 2, 2, 1) 90%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(16, 27, 30, 0)),
+    color-stop(90%, rgba(12, 2, 2, 1))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(16, 27, 30, 0) 0%,
+    rgba(12, 2, 2, 1) 90%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(16, 27, 30, 0) 0%,
+    rgba(12, 2, 2, 1) 90%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(16, 27, 30, 0) 0%,
+    rgba(12, 2, 2, 1) 90%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 27, 30, 0) 0%,
+    rgba(12, 2, 2, 1) 90%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00101b1e', endColorstr='#0c0202',GradientType=0 ); /* IE6-9 */
+}
+
+.photo-box aside span {
+  color: #aaa;
+}
+
+.photo-box aside span a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.text-box {
+  background: rgb(0, 0, 0); /* bluish grey */
+  color: #ffe91f9a; /* steel blue */
+}
+
+.text-box-head {
+  color: rgb(177, 177, 177);
+  padding-bottom: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+}
+
+.text-box-subhead {
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-box {
+  text-align: center;
+  font-size: 120%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.form-box .pure-button {
+  background-color: #000000;
+  color: white;
+  vertical-align: top;
+  font-size: 85%;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  margin: 0.3em;
+}
+
+
+.footer {
+  background: #111;
+  color: #666;
+  position: absolute;
+  text-align: center;
+  padding: 1em;
+  font-size: 80%;
+  width: 100%;
+}
+
+@media (min-width: 30em) {
+  .photo-box,
+  .text-box {
+    text-align: left;
+  }
+
+  .photo-box-thin {
+    height: 250px;
+  }
+}
+
+.pure-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+
+  border: solid 10px #000; 
+  background-color: rgba(14, 14, 14, 0.8); 
+  border-color: rgba(0,0,0,0.2); 
+}
+
+tr {
+  background-color: rgb(0, 0, 0);
+  color: rgb(199, 199, 199);
+}
+/*
+Name: StarWarsIntro.css
+URI: polarnotion.github.io/starwarsintro
+Author: Polar Notion
+Author URI: http://polarnotion.com/
+Description: A simple CSS library for creating a Star Wars Intro Crawl. May the Force be with you.
+Version: 1.0
+*/
+
+body, html{
+  height: 100%;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.star-wars-intro {
+  background: url("../img/background.jpg") center center;
+  width: 100%;
+  height: 100%;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+  font-weight: 700;
+  color: #EBD71C;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.star-wars-intro p.intro-text {
+  position: relative;
+  max-width: 16em;
+  font-size: 200%;
+  font-weight: 400;
+  margin: 20% auto;
+  color: #4ee;
+  opacity: 0;
+  z-index: 1;
+  text-align: center;
+  -webkit-animation: intro 2s ease-out;
+  -moz-animation: intro 2s ease-out;
+  -ms-animation: intro 2s ease-out;
+  -o-animation: intro 2s ease-out;
+  animation: intro 2s ease-out;
+}
+
+.star-wars-intro .main-content{
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 3;
+  width: 98%;
+  height: 50em;
+  bottom: 0;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(350px) rotateX(25deg);
+}
+
+.star-wars-intro .main-content:after {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.star-wars-intro .space-button {
+  color: #EBD71C;
+  border: 12px solid #EBD71C;
+  padding: 20px;
+  background: transparent;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.star-wars-intro .space-button:hover {
+  background-color: #D2BE03;
+  border-color: #D2BE03;
+  color: black;
+}
+
+.star-wars-intro .space-button:active,
+.star-wars-intro .space-button:focus {
+  background-color: #B8A40A;
+  border-color: #B8A40A;
+  color: black;
+}
+
+.star-wars-intro .title-content {
+  position: absolute;
+  top: 100%;
+  animation: scroll 120s linear 4s forwards;
+}
+
+.star-wars-intro .title-content > .content-header {
+  text-align: center;
+}
+
+/* Main Image Styles */
+
+.star-wars-intro .main-logo {
+  position: absolute;
+  width: 2.6em;
+  left: 50%;
+  top: 20vh;
+  font-size: 10em;
+  text-align: center;
+  margin-left: -1.3em;
+  line-height: 0.8em;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: logo 5s ease-out 2.5s;
+  -moz-animation: logo 5s ease-out 2.5s;
+  -ms-animation: logo 5s ease-out 2.5s;
+  -o-animation: logo 5s ease-out 2.5s;
+  animation: logo 5s ease-out 2.5s;
+}
+
+.star-wars-intro .main-logo > img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+@-webkit-keyframes logo {
+  0% { -webkit-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+  0% { -moz-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+  0% { -ms-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+  0% { -o-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+  0% { transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -170%; }
+}
+
+@media screen and (max-width: 720px) {
+  .star-wars-intro .main-content {
+    font-size: 35px;
+  }
+  .star-wars-intro .title-content {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 4s forwards;
+  }
+}

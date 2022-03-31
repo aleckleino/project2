@@ -1,0 +1,161 @@
+<%- include("../partials/head") %>
+<body>
+    <div id="page-container">
+    <%- include("../partials/navbar") %>
+    <div class="center">
+        <h1>Star wars planets</h1>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Diameter (km)</th>
+                    <th>Rotation period (h)</th>
+                    <th>Orbital period (d)</th>
+                    <th>Gravity (Gs)</th>
+                    <th>Population</th>
+                    <th>Climate</th>
+                    <th>Terrain</th>
+                    <th>Surface water (%)</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <% for(var i=0; i < planets.results.length ; i++ ){ %>
+                    <tr>
+                        <td>
+                            <%=planets.results[i].name%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].diameter%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].rotation_period%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].orbital_period%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].gravity%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].population%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].climate%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].terrain%>
+                        </td>
+                        <td>
+                            <%=planets.results[i].surface_water%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+                <% for(var i=0; i < planets2.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=planets2.results[i].name%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].diameter%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].rotation_period%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].orbital_period%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].gravity%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].population%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].climate%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].terrain%>
+                        </td>
+                        <td>
+                            <%=planets2.results[i].surface_water%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+                <% for(var i=0; i < planets3.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=planets3.results[i].name%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].diameter%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].rotation_period%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].orbital_period%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].gravity%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].population%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].climate%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].terrain%>
+                        </td>
+                        <td>
+                            <%=planets3.results[i].surface_water%>
+                        </td>
+                    </tr>
+
+                    <% }; %>
+                <% for(var i=0; i < planets4.results.length ; i++ ){ %>
+
+                    <tr>
+                        <td>
+                            <%=planets4.results[i].name%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].diameter%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].rotation_period%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].orbital_period%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].gravity%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].population%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].climate%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].terrain%>
+                        </td>
+                        <td>
+                            <%=planets4.results[i].surface_water%>
+                        </td>
+                    </tr>
+                    <% }; %>
+            </tbody>
+            </tbody>
+        </table>
+
+    </div>
+<%- include("../partials/footer") %>
+</div>
+</body>
+</html>
